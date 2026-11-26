@@ -10,7 +10,11 @@ sentence, one read, no setup beyond the office it sits in, and the
 import os
 
 # The entry itself: one line, the punch is the last clause.
-ENTRY = "I have jammed twice in nine years and been thumped 400 times, yet I am the one with the anger problem."
+PARTS = [
+    "I have jammed twice in nine years and been thumped 400 times,",
+    "yet I am the one with the anger problem.",
+]
+ENTRY = " ".join(PARTS)
 
 OUTPUT_PATH = "/output/entry.txt"
 
